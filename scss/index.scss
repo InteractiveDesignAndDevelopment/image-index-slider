@@ -1,0 +1,9 @@
+@import '../node_modules/sass-bem/bem';
+
+@import 'image-index-slider';
+@import 'image-index-slider-cell';
+@import 'flickity';
+
+@include t(default) {
+  @import 'themes/default/compiled';
+}

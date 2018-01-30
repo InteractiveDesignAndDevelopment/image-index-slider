@@ -1,0 +1,54 @@
+//  ██ ███    ███ ██████   ██████  ██████  ████████ ███████
+//  ██ ████  ████ ██   ██ ██    ██ ██   ██    ██    ██
+//  ██ ██ ████ ██ ██████  ██    ██ ██████     ██    ███████
+//  ██ ██  ██  ██ ██      ██    ██ ██   ██    ██         ██
+//  ██ ██      ██ ██       ██████  ██   ██    ██    ███████
+
+@import '../node_modules/sass-bem/bem';
+
+//   ██████  ██████  ██       ██████  ██████  ███████
+//  ██      ██    ██ ██      ██    ██ ██   ██ ██
+//  ██      ██    ██ ██      ██    ██ ██████  ███████
+//  ██      ██    ██ ██      ██    ██ ██   ██      ██
+//   ██████  ██████  ███████  ██████  ██   ██ ███████
+
+$background-color: #ddd;
+
+//   ██████  ██████  ████████ ██  ██████  ███    ██ ███████
+//  ██    ██ ██   ██    ██    ██ ██    ██ ████   ██ ██
+//  ██    ██ ██████     ██    ██ ██    ██ ██ ██  ██ ███████
+//  ██    ██ ██         ██    ██ ██    ██ ██  ██ ██      ██
+//   ██████  ██         ██    ██  ██████  ██   ████ ███████
+
+@include component(options) {
+  background-color: $background-color;
+  box-sizing: border-box;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  width: calc(100% - 1rem);
+
+  * {
+    box-sizing: inherit;
+  }
+
+  @include element(set) {
+    display: flex;
+
+    &:not(:last-of-type) {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  @include element(label) {
+    width: 8rem;
+  }
+
+  @include element(field) {
+    flex-grow: 1;
+  }
+
+  @include element(input) {
+    width: 100%;
+  }
+
+}

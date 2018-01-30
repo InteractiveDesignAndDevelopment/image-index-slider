@@ -1,0 +1,14 @@
+.flickity {
+  &-page-dots {
+    position: static;
+  }
+
+  &-enabled {
+    // CommonSpot uses the `is-draggable` for its own purposes
+    // That class is sapped out for `is-luggalbe` in JavaScript
+    // ("Luggable" just seemed the best synonym)
+    .is-luggable {
+      user-select: none;
+    }
+  }
+}

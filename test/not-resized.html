@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Image Index: Slider (Not Resized)</title>
+
+    <!-- CSS -->
+
+    <link href="./resources/normalize.css/6.0/normalize.css" rel="stylesheet">
+    <link href="./resources/flickity/2.0.5/flickity.css" rel="stylesheet">
+    <link href="./resources/smartphoto/0.5.9/css/smartphoto.css" rel="stylesheet">
+
+    <link href="./dist/css/image-index-slider.css" rel="stylesheet">
+
+    <!-- JavaScript -->
+
+    <script src="./resources/babel-polyfill/6.23.0/polyfill.min.js"></script>
+    <script src="./resources/polyfill-nodelist-foreach/1.0.1/polyfill-nodelist-foreach.js"></script>
+    <script src="./resources/element-closest/2.0.2/element-closest.js"></script>
+    <script src="./resources/flickity/2.0.5/flickity.pkgd.min.js"></script>
+    <script src="./resources/picturefill/3.0.3/picturefill.min.js"></script>
+    <script src="./resources/smartphoto/0.5.9/js/smartphoto.js"></script>
+
+    <script src="./dist/js/image-index-slider.js"></script>
+  </head>
+  <body>
+
+    <div>
+      <a href="./">Back to index</a>
+    </div>
+
+    <h1>Image Index: Slider<br>(Not Resized)</h1>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Nulla consequat sed purus sed tincidunt.
+      Sed id leo eget lacus sagittis placerat et id sapien.
+      Morbi nec metus quis risus mattis maximus a sed metus.
+      <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Mauris non ligula euismod, fringilla ante eu, lacinia velit.
+      Etiam sagittis imperdiet purus et laoreet.
+      Mauris et justo ac ligula auctor laoreet.
+      Maecenas fringilla, turpis eu mattis elementum, velit leo accumsan dui, at convallis eros lectus vel tellus.
+      Pellentesque tincidunt ultrices egestas.
+      Mauris consequat mauris non mi condimentum sollicitudin.
+      Phasellus venenatis fringilla justo, ut bibendum justo tempus at.
+      Suspendisse potenti.
+      Mauris fringilla urna gravida posuere eleifend.
+      Vivamus vehicula ligula tempor lectus viverra, id suscipit arcu malesuada.
+      Sed rutrum blandit nulla, sed elementum ex scelerisque eget.
+      Maecenas ornare consequat bibendum. -->
+    </p>
+
+    <style id="style-tag-options"></style>
+
+    <style>
+      /* max-width: 100% * (<this aspect ratio> / <widest aspect ratio>) */
+      #image-index-slider-654874-cell-00 .image-index-slider-cell__figure { max-width: calc(100% * (1.25 / 1.56)); } /* 1600 x 1282, a/r = 1.25 */
+      #image-index-slider-654874-cell-01 .image-index-slider-cell__figure { max-width: calc(100% * (1.52 / 1.56)); } /* 2109 x 1390, a/r = 1.52 */
+      #image-index-slider-654874-cell-02 .image-index-slider-cell__figure { max-width: calc(100% * (1.52 / 1.56)); } /* 2109 x 1390, a/r = 1.52 */
+      #image-index-slider-654874-cell-03 .image-index-slider-cell__figure { max-width: calc(100% * (1.33 / 1.56)); } /* 2592 x 1944, a/r = 1.33 */
+      #image-index-slider-654874-cell-04 .image-index-slider-cell__figure { max-width: calc(100% * (0.78 / 1.56)); } /* 2318 x 3000, a/r = 0.78 */
+      #image-index-slider-654874-cell-05 .image-index-slider-cell__figure { max-width: calc(100% * (0.71 / 1.56)); } /* 1181 x 1671, a/r = 0.71 */
+      #image-index-slider-654874-cell-06 .image-index-slider-cell__figure { max-width: calc(100% * (0.86 / 1.56)); } /* 1378 x 1600, a/r = 0.86 */
+      #image-index-slider-654874-cell-07 .image-index-slider-cell__figure { max-width: calc(100% * (0.81 / 1.56)); } /* 2893 x 3552, a/r = 0.81 */
+      #image-index-slider-654874-cell-08 .image-index-slider-cell__figure { max-width: calc(100% * (0.71 / 1.56)); } /* 1200 x 1686, a/r = 0.71 */
+      #image-index-slider-654874-cell-09 .image-index-slider-cell__figure { max-width: calc(100% * (1.56 / 1.56)); } /* 2500 x 1600, a/r = 1.56 */
+      #image-index-slider-654874-cell-10 .image-index-slider-cell__figure { max-width: calc(100% * (1.09 / 1.56)); } /* 1800 x 1652, a/r = 1.09 */
+      #image-index-slider-654874-cell-11 .image-index-slider-cell__figure { max-width: calc(100% * (0.97 / 1.56)); } /* 1728 x 1779, a/r = 0.97 */
+      #image-index-slider-654874-cell-12 .image-index-slider-cell__figure { max-width: calc(100% * (1.08 / 1.56)); } /* 2550 x 2359, a/r = 1.08 */
+      #image-index-slider-654874-cell-13 .image-index-slider-cell__figure { max-width: calc(100% * (1.50 / 1.56)); } /* 5616 x 3744, a/r = 1.50 */
+      #image-index-slider-654874-cell-14 .image-index-slider-cell__figure { max-width: calc(100% * (0.88 / 1.56)); } /* 1578 x 1800, a/r = 0.88 */
+      #image-index-slider-654874-cell-15 .image-index-slider-cell__figure { max-width: calc(100% * (0.72 / 1.56)); } /* 1400 x 1934, a/r = 0.72 */
+      #image-index-slider-654874-cell-16 .image-index-slider-cell__figure { max-width: calc(100% * (1.43 / 1.56)); } /* 2647 x 1845, a/r = 1.43 */
+      #image-index-slider-654874-cell-17 .image-index-slider-cell__figure { max-width: calc(100% * (1.46 / 1.56)); } /* 1872 x 1279, a/r = 1.46 */
+      #image-index-slider-654874-cell-18 .image-index-slider-cell__figure { max-width: calc(100% * (1.27 / 1.56)); } /* 1800 x 1419, a/r = 1.27 */
+      #image-index-slider-654874-cell-19 .image-index-slider-cell__figure { max-width: calc(100% * (0.66 / 1.56)); } /* 1200 x 1809, a/r = 0.66 */
+
+      /* max-width: <shortest image width> / <inverse aspect ratio> */
+      #image-index-slider-654874-cell-00 .image-index-slider-cell__link { max-width: calc(1282px / 0.80); } /* 1600 x 1282, i-a/r = 0.80 */
+      #image-index-slider-654874-cell-01 .image-index-slider-cell__link { max-width: calc(1282px / 0.66); } /* 2109 x 1390, i-a/r = 0.66 */
+      #image-index-slider-654874-cell-02 .image-index-slider-cell__link { max-width: calc(1282px / 0.66); } /* 2109 x 1390, i-a/r = 0.66 */
+      #image-index-slider-654874-cell-03 .image-index-slider-cell__link { max-width: calc(1282px / 0.75); } /* 2592 x 1944, i-a/r = 0.75 */
+      #image-index-slider-654874-cell-04 .image-index-slider-cell__link { max-width: calc(1282px / 1.29); } /* 2318 x 3000, i-a/r = 1.29 */
+      #image-index-slider-654874-cell-05 .image-index-slider-cell__link { max-width: calc(1282px / 1.41); } /* 1181 x 1671, i-a/r = 1.41 */
+      #image-index-slider-654874-cell-06 .image-index-slider-cell__link { max-width: calc(1282px / 1.16); } /* 1378 x 1600, i-a/r = 1.16 */
+      #image-index-slider-654874-cell-07 .image-index-slider-cell__link { max-width: calc(1282px / 1.22); } /* 2893 x 3552, i-a/r = 1.22 */
+      #image-index-slider-654874-cell-08 .image-index-slider-cell__link { max-width: calc(1282px / 1.40); } /* 1200 x 1686, i-a/r = 1.40 */
+      #image-index-slider-654874-cell-09 .image-index-slider-cell__link { max-width: calc(1282px / 0.64); } /* 2500 x 1600, i-a/r = 0.64 */
+      #image-index-slider-654874-cell-10 .image-index-slider-cell__link { max-width: calc(1282px / 0.92); } /* 1800 x 1652, i-a/r = 0.92 */
+      #image-index-slider-654874-cell-11 .image-index-slider-cell__link { max-width: calc(1282px / 1.03); } /* 1728 x 1779, i-a/r = 1.03 */
+      #image-index-slider-654874-cell-12 .image-index-slider-cell__link { max-width: calc(1282px / 0.93); } /* 2550 x 2359, i-a/r = 0.93 */
+      #image-index-slider-654874-cell-13 .image-index-slider-cell__link { max-width: calc(1282px / 0.67); } /* 5616 x 3744, i-a/r = 0.67 */
+      #image-index-slider-654874-cell-14 .image-index-slider-cell__link { max-width: calc(1282px / 1.14); } /* 1578 x 1800, i-a/r = 1.14 */
+      #image-index-slider-654874-cell-15 .image-index-slider-cell__link { max-width: calc(1282px / 1.38); } /* 1400 x 1934, i-a/r = 1.38 */
+      #image-index-slider-654874-cell-16 .image-index-slider-cell__link { max-width: calc(1282px / 0.70); } /* 2647 x 1845, i-a/r = 0.70 */
+      #image-index-slider-654874-cell-17 .image-index-slider-cell__link { max-width: calc(1282px / 0.68); } /* 1872 x 1279, i-a/r = 0.68 */
+      #image-index-slider-654874-cell-18 .image-index-slider-cell__link { max-width: calc(1282px / 0.79); } /* 1800 x 1419, i-a/r = 0.79 */
+      #image-index-slider-654874-cell-19 .image-index-slider-cell__link { max-width: calc(1282px / 1.50); } /* 1200 x 1809, i-a/r = 1.50 */
+    </style>
+
+    <div class="image-index-slider" id="image-index-slider-654874">
+
+      <div class="t-default">
+
+        <div class="image-index-slider__carousel">
+
+          <div class="image-index-slider-cell" id="image-index-slider-654874-cell-00">
+            <figure class="image-index-slider-cell__figure">
+              <a class="image-index-slider-cell__link" href="./images/mineral-00-original.jpg" data-size="1600x1282">
+                <img
+                  class="image-index-slider-cell__thumbnail"
+                  width="1600"
+                  height="1282"
+                  src="./images/mineral-00-thumbnail.jpg"
+                  srcset="./images/mineral-00-thumbnail.jpg 150w,
+                    ./images/mineral-00-original.jpg 1600w" />
+              </a>
+            </figure>
+          </div>
+
+          <div class="image-index-slider-cell" id="image-index-slider-654874-cell-01">
+            <figure class="image-index-slider-cell__figure">
+              <a class="image-index-slider-cell__link" href="./images/mineral-01-original.jpg" data-size="2109x1390">
+                <img
+                  class="image-index-slider-cell__thumbnail"
+                  width="2109"
+                  height="1390"
+                  src="./images/mineral-01-thumbnail.jpg"
+                  srcset="./images/mineral-01-thumbnail.jpg 150w,
+                    ./images/mineral-01-original.jpg 2109w" />
+              </a>
+            </figure>
+          </div>
+
+          <div class="image-index-slider-cell" id="image-index-slider-654874-cell-02">
+            <figure class="image-index-slider-cell__figure">
+              <a class="image-index-slider-cell__link" href="./images/mineral-02-original.jpg" data-size="2109x1390">
+                <img
+                  class="image-index-slider-cell__thumbnail"
+                  width="2109"
+                  height="1390"
+                  src="./images/mineral-02-thumbnail.jpg"
+                  srcset="./images/mineral-02-thumbnail.jpg 150w,
+                    ./images/mineral-02-original.jpg 2109w" />
+              </a>
+            </figure>
+          </div>
+
+          <div class="image-index-slider-cell" id="image-index-slider-654874-cell-03">
+            <figure class="image-index-slider-cell__figure">
+              <a class="image-index-slider-cell__link" href="./images/mineral-03-original.jpg" data-size="2592x1944">
+                <img
+                  class="image-index-slider-cell__thumbnail"
+                  width="2592"
+                  height="1944"
+                  src="./images/mineral-03-thumbnail.jpg"
+                  srcset="./images/mineral-03-thumbnail.jpg 150w,
+                    ./images/mineral-03-original.jpg 2592w" />
+              </a>
+            </figure>
+          </div>
+
+          <div class="image-index-slider-cell" id="image-index-slider-654874-cell-04">
+            <figure class="image-index-slider-cell__figure">
+              <a class="image-index-slider-cell__link" href="./images/mineral-04-original.jpg" data-size="2318x3000">
+                <img
+                  class="image-index-slider-cell__thumbnail"
+                  width="2318"
+                  height="3000"
+                  src="./images/mineral-04-thumbnail.jpg"
+                  srcset="./images/mineral-04-thumbnail.jpg 115w,
+                    ./images/mineral-04-original.jpg 2318w" />
+              </a>
+            </figure>
+          </div>
+
+          <div class="image-index-slider-cell" id="image-index-slider-654874-cell-05">
+            <figure class="image-index-slider-cell__figure">
+              <a class="image-index-slider-cell__link" href="./images/mineral-05-original.jpg" data-size="1181x1671">
+                <img
+                  class="image-index-slider-cell__thumbnail"
+                  width="1181"
+                  height="1671"
+                  src="./images/mineral-05-thumbnail.jpg"
+                  srcset="./images/mineral-05-thumbnail.jpg 106w,
+                    ./images/mineral-05-original.jpg 1181w" />
+              </a>
+            </figure>
+          </div>
+
+          <div class="image-index-slider-cell" id="image-index-slider-654874-cell-06">
+            <figure class="image-index-slider-cell__figure">
+              <a class="image-index-slider-cell__link" href="./images/mineral-06-original.jpg" data-size="1378x1600">
+                <img
+                  class="image-index-slider-cell__thumbnail"
+                  width="1378"
+                  height="1600"
+                  src="./images/mineral-06-thumbnail.jpg"
+                  srcset="./images/mineral-06-thumbnail.jpg 129w,
+                    ./images/mineral-06-original.jpg 1378w" />
+              </a>
+            </figure>
+          </div>
+
+          <div class="image-index-slider-cell" id="image-index-slider-654874-cell-07">
+            <figure class="image-index-slider-cell__figure">
+              <a class="image-index-slider-cell__link" href="./images/mineral-07-original.jpg" data-size="2893x3552">
+                <img
+                  class="image-index-slider-cell__thumbnail"
+                  width="2893"
+                  height="3552"
+                  src="./images/mineral-07-thumbnail.jpg"
+                  srcset="./images/mineral-07-thumbnail.jpg 133w,
+                    ./images/mineral-07-original.jpg 2893w" />
+              </a>
+            </figure>
+          </div>
+
+          <div class="image-index-slider-cell" id="image-index-slider-654874-cell-08">
+            <figure class="image-index-slider-cell__figure">
+              <a class="image-index-slider-cell__link" href="./images/mineral-08-original.jpg" data-size="1200x1686">
+                <img
+                  class="image-index-slider-cell__thumbnail"
+                  width="1200"
+                  height="1686"
+                  src="./images/mineral-08-thumbnail.jpg"
+                  srcset="./images/mineral-08-thumbnail.jpg 106w,
+                    ./images/mineral-08-original.jpg 1200w" />
+              </a>
+            </figure>
+          </div>
+
+          <div class="image-index-slider-cell" id="image-index-slider-654874-cell-09">
+            <figure class="image-index-slider-cell__figure">
+              <a class="image-index-slider-cell__link" href="./images/mineral-09-original.jpg" data-size="2500x1600">
+                <img
+                  class="image-index-slider-cell__thumbnail"
+                  width="2500"
+                  height="1600"
+                  src="./images/mineral-09-thumbnail.jpg"
+                  srcset="./images/mineral-09-thumbnail.jpg 150w,
+                    ./images/mineral-09-original.jpg 2500w" />
+              </a>
+            </figure>
+          </div>
+
+          <div class="image-index-slider-cell" id="image-index-slider-654874-cell-10">
+            <figure class="image-index-slider-cell__figure">
+              <a class="image-index-slider-cell__link" href="./images/mineral-10-original.jpg" data-size="1800x1652">
+                <img
+                  class="image-index-slider-cell__thumbnail"
+                  width="1800"
+                  height="1652"
+                  src="./images/mineral-10-thumbnail.jpg"
+                  srcset="./images/mineral-10-thumbnail.jpg 150w,
+                    ./images/mineral-10-original.jpg 1800w" />
+              </a>
+            </figure>
+          </div>
+
+          <div class="image-index-slider-cell" id="image-index-slider-654874-cell-11">
+            <figure class="image-index-slider-cell__figure">
+              <a class="image-index-slider-cell__link" href="./images/mineral-11-original.jpg" data-size="1728x1779">
+                <img
+                  class="image-index-slider-cell__thumbnail"
+                  width="1728"
+                  height="1779"
+                  src="./images/mineral-11-thumbnail.jpg"
+                  srcset="./images/mineral-11-thumbnail.jpg 145w,
+                    ./images/mineral-11-original.jpg 1728w" />
+              </a>
+            </figure>
+          </div>
+
+          <div class="image-index-slider-cell" id="image-index-slider-654874-cell-12">
+            <figure class="image-index-slider-cell__figure">
+              <a class="image-index-slider-cell__link" href="./images/mineral-12-original.jpg" data-size="2550x2359">
+                <img
+                  class="image-index-slider-cell__thumbnail"
+                  width="2550"
+                  height="2359"
+                  src="./images/mineral-12-thumbnail.jpg"
+                  srcset="./images/mineral-12-thumbnail.jpg 150w,
+                    ./images/mineral-12-original.jpg 2550w" />
+              </a>
+            </figure>
+          </div>
+
+          <div class="image-index-slider-cell" id="image-index-slider-654874-cell-13">
+            <figure class="image-index-slider-cell__figure">
+              <a class="image-index-slider-cell__link" href="./images/mineral-13-original.jpg" data-size="1516x3744">
+                <img
+                  class="image-index-slider-cell__thumbnail"
+                  width="1516"
+                  height="3744"
+                  src="./images/mineral-13-thumbnail.jpg"
+                  srcset="./images/mineral-13-thumbnail.jpg 150w,
+                    ./images/mineral-13-original.jpg 5616w" />
+              </a>
+            </figure>
+          </div>
+
+          <div class="image-index-slider-cell" id="image-index-slider-654874-cell-14">
+            <figure class="image-index-slider-cell__figure">
+              <a class="image-index-slider-cell__link" href="./images/mineral-14-original.jpg" data-size="1578x1800">
+                <img
+                  class="image-index-slider-cell__thumbnail"
+                  width="1578"
+                  height="1800"
+                  src="./images/mineral-14-thumbnail.jpg"
+                  srcset="./images/mineral-14-thumbnail.jpg 131w,
+                    ./images/mineral-14-original.jpg 1578w" />
+              </a>
+            </figure>
+          </div>
+
+          <div class="image-index-slider-cell" id="image-index-slider-654874-cell-15">
+            <figure class="image-index-slider-cell__figure">
+              <a class="image-index-slider-cell__link" href="./images/mineral-15-original.jpg" data-size="1400x1934">
+                <img
+                  class="image-index-slider-cell__thumbnail"
+                  width="1400"
+                  height="1934"
+                  src="./images/mineral-15-thumbnail.jpg"
+                  srcset="./images/mineral-15-thumbnail.jpg 108w,
+                    ./images/mineral-15-original.jpg 1400w" />
+              </a>
+            </figure>
+          </div>
+
+          <div class="image-index-slider-cell" id="image-index-slider-654874-cell-16">
+            <figure class="image-index-slider-cell__figure">
+              <a class="image-index-slider-cell__link" href="./images/mineral-16-original.jpg" data-size="2647x1845">
+                <img
+                  class="image-index-slider-cell__thumbnail"
+                  width="2647"
+                  height="1845"
+                  src="./images/mineral-16-thumbnail.jpg"
+                  srcset="./images/mineral-16-thumbnail.jpg 150w,
+                    ./images/mineral-16-original.jpg 2647w" />
+              </a>
+            </figure>
+          </div>
+
+          <div class="image-index-slider-cell" id="image-index-slider-654874-cell-17">
+            <figure class="image-index-slider-cell__figure">
+              <a class="image-index-slider-cell__link" href="./images/mineral-17-original.jpg" data-size="1872x1297">
+                <img
+                  class="image-index-slider-cell__thumbnail"
+                  width="1872"
+                  height="1297"
+                  src="./images/mineral-17-thumbnail.jpg"
+                  srcset="./images/mineral-17-thumbnail.jpg 150w,
+                    ./images/mineral-17-original.jpg 1872w" />
+              </a>
+            </figure>
+          </div>
+
+          <div class="image-index-slider-cell" id="image-index-slider-654874-cell-18">
+            <figure class="image-index-slider-cell__figure">
+              <a class="image-index-slider-cell__link" href="./images/mineral-18-original.jpg" data-size="1800x1419">
+                <img
+                  class="image-index-slider-cell__thumbnail"
+                  width="1800"
+                  height="1419"
+                  src="./images/mineral-18-thumbnail.jpg"
+                  srcset="./images/mineral-18-thumbnail.jpg 150w,
+                    ./images/mineral-18-original.jpg 1800w" />
+              </a>
+            </figure>
+          </div>
+
+          <div class="image-index-slider-cell" id="image-index-slider-654874-cell-19">
+            <figure class="image-index-slider-cell__figure">
+              <a class="image-index-slider-cell__link" href="./images/mineral-19-original.jpg" data-size="1200x1809">
+                <img
+                  class="image-index-slider-cell__thumbnail"
+                  width="1200"
+                  height="1809"
+                  src="./images/mineral-19-thumbnail.jpg"
+                  srcset="./images/mineral-19-thumbnail.jpg 99w,
+                    ./images/mineral-19-original.jpg 1200w">
+              </a>
+            </figure>
+          </div>
+
+        </div><!-- .image-index-slider-cell__carousel -->
+
+      </div><!-- .t-default -->
+
+    </div><!-- .image-index-slider -->
+
+    <p>
+      Duis posuere odio sed facilisis venenatis.
+      Morbi finibus placerat justo, in aliquet arcu viverra at.
+      Sed ut suscipit elit, eget gravida ex. Donec hendrerit porttitor mauris.
+      Proin ipsum nisi, elementum ac commodo at, vestibulum et felis. Aliquam erat volutpat.
+      <!-- Etiam efficitur tellus ut enim laoreet luctus.
+      Fusce elementum, sem vel lobortis ornare, magna dui finibus leo, vel scelerisque justo nulla sit amet orci.
+      Aliquam aliquam suscipit tortor, sit amet mattis orci finibus id.
+      Sed commodo urna nec arcu interdum volutpat.
+      Proin maximus, turpis in semper maximus, erat ligula fermentum ipsum, id sollicitudin est nisl sed magna.
+      Duis sed rhoncus mauris, et dapibus nulla.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      In hac habitasse platea dictumst.
+      Vestibulum eget pellentesque orci.
+      Quisque tempus blandit mi, sit amet venenatis nibh lobortis vitae. -->
+    </p>
+
+  </body>
+</html>

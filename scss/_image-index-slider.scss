@@ -1,0 +1,20 @@
+@include b(image-index-slider) {
+  box-sizing: border-box;
+
+  @include before {
+    box-sizing: inherit;
+  }
+
+  @include after {
+    box-sizing: inherit;
+  }
+
+  * {
+    box-sizing: inherit;
+
+    &::before,
+    &::after {
+      box-sizing: inherit;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@include b(image-index-slider-cell) {
+  @include e(figure) {
+    margin: 0;
+  }
+  @include e(thumbnail) {
+    color: transparent;
+  }
+}

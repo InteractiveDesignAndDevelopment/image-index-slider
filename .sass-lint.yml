@@ -1,0 +1,72 @@
+files:
+  include: "**/*.scss"
+options:
+  formatter: stylish
+  merge-default-rules: true
+rules:
+  class-name-format:
+    - true
+    - convention: hyphenatedbem
+  function-name-format:
+    - true
+    - convention: hyphenatedbem
+  leading-zero:
+    - true
+    - include: true
+  mixin-name-format:
+    - true
+    - convention: hyphenatedbem
+  mixins-before-declarations:
+    - true
+    - exclude:
+        - b
+        - block
+        - e
+        - element
+        - m
+        - modifier
+        - at
+        - duo
+        - with
+        - while
+        - is
+        - has
+        - js
+        - hover
+        - focus
+        - active
+        - checked
+        - disabled
+        - readonly
+        - editable
+        - contenteditable
+        - first
+        - last
+        - even
+        - odd
+        - before
+        - after
+        - parse
+        - component
+        - c
+        - hack
+        - _
+        - object
+        - o
+        - scope
+        - s
+        - state
+        - test
+        - qa
+        - theme
+        - t
+        - utility
+        - u
+  no-ids:
+    - true
+  placeholder-name-format:
+    - true
+    - convention: hyphenatedbem
+  variable-name-format:
+    - true
+    - convention: hyphenatedbem

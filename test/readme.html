@@ -1,0 +1,55 @@
+<h1 id="standard-element-image-index-slider-render-handler">Standard element Image Index Slider render handler</h1>
+<h2 id="options">Options</h2>
+<h3 id="image-index">Image Index</h3>
+<ul>
+<li><p><code>auto-play-&lt;integer&gt;</code><br>Automatically advance to the next slide at the given interval.<br>(In milliseconds.)</p>
+</li>
+<li><p><code>background-color-&lt;hex&gt;</code><br>The color behind all the slides.<br>(Use 3, 4, 6 or 8-digit hexadecimal notation without a pound sign.)<br>(Use &ldquo;transparent&rdquo; for no color.)</p>
+</li>
+</ul>
+<h3 id="photo">Photo</h3>
+<ul>
+<li><p><code>background-color-&lt;hex&gt;</code><br>The color behind the image and caption (if visible).<br>(Use 3, 4, 6 or 8-digit hexadecimal notation without a pound sign.)<br>(The selected theme must support this feature.)</p>
+</li>
+<li><p><code>caption-background-color-&lt;hex&gt;</code><br>The color behind the caption.<br>(Use 3, 4, 6 or 8-digit hexadecimal notation without a pound sign.)  </p>
+</li>
+</ul>
+<h3 id="title">Title</h3>
+<ul>
+<li><p><code>color-&lt;hex&gt;</code><br>The color of the titular text.<br>(Use 3, 4, 6 or 8-digit hexadecimal notation without a pound sign.)</p>
+</li>
+<li><p><code>size-&lt;int&gt;</code><br>The size of the tituar text.<br>(In pixels.)</p>
+</li>
+<li><p><code>visible</code><br>Add a caption with a title to every image.<br>(Blank titles are not displayed.)</p>
+</li>
+</ul>
+<h3 id="description">Description</h3>
+<ul>
+<li><p><code>color-&lt;hex&gt;</code><br>The color of the descriptive text.<br>(Use 3, 4, 6 or 8-digit hexadecimal notation without a pound sign.)</p>
+</li>
+<li><p><code>size-&lt;int&gt;</code><br>The size of the descriptive text.<br>(In pixels.)</p>
+</li>
+<li><p><code>visible</code><br>Add a caption with a description to every image.<br>(Blank descriptions are not displayed.)<br>(Description must be different from the title to be visible.)</p>
+</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<p><a href="./examples/">View examples</a></p>
+<h2 id="how-it-works">How it Works</h2>
+<ul>
+<li>Subject<ul>
+<li>Keeps the images around the same aspect ratio</li>
+<li><code>max-width: 100% * (&lt;this aspect ratio&gt; / &lt;widest aspect ratio&gt;)</code></li>
+</ul>
+</li>
+<li>Link<ul>
+<li>Keeps the imges around the same height</li>
+<li><code>max-width: &lt;shortest image height&gt; / &lt;inverse aspect ratio&gt;</code></li>
+</ul>
+</li>
+<li>Image<ul>
+<li>Keeps the images from overflowing their containers</li>
+<li><code>max-width: 100%</code></li>
+</ul>
+</li>
+</ul>
+

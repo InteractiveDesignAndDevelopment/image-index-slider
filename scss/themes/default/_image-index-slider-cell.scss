@@ -1,0 +1,59 @@
+@include b(image-index-slider-cell) {
+
+  margin-right: 1rem;
+  width: 100%;
+
+  @include e(figure) {
+    display: block;
+    margin: 0 auto;
+  }
+
+  @include e(link) {
+    display: block;
+    margin: 0 auto;
+
+    @include at(with-title) {
+      margin-bottom: 1rem;
+    }
+
+    @include at(with-description) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  @include e(thumbnail) {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+  }
+
+  @include e(caption) {
+    background: $caption-background-color;
+    color: $caption-text-color;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  @include e(title) {
+    font-size: 1.2rem;
+
+    @include at(with-description) {
+      border-bottom: 1px solid darken($caption-background-color, 25%);
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  @include e(description) {
+    font-size: 1.2rem;
+
+    @include at(with-title) {
+      font-size: 1rem;
+    }
+  }
+
+}
